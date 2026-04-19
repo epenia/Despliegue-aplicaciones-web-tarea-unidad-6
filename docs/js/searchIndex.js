@@ -16,6 +16,11 @@ Search.appendIndex(
             "summary": "Obtiene\u0020el\u0020nombre\u0020de\u0020la\u0020tarea.",
             "url": "classes/Tarea.html#method_getNombre"
         },                {
+            "fqsen": "\\Tarea\u003A\u003AcompletarTarea\u0028\u0029",
+            "name": "completarTarea",
+            "summary": "Simula\u0020la\u0020finalizaci\u00F3n\u0020de\u0020una\u0020tarea.",
+            "url": "classes/Tarea.html#method_completarTarea"
+        },                {
             "fqsen": "\\Tarea\u003A\u003A\u0024nombre",
             "name": "nombre",
             "summary": "",

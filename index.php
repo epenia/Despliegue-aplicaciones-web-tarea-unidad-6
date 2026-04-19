@@ -31,6 +31,15 @@ class Tarea
     {
         return $this->nombre;
     }
+
+    /**
+     * Simula la finalización de una tarea.
+     * * @return string Mensaje de confirmación.
+     */
+    public function completarTarea()
+    {
+        return "La tarea '" . $this->nombre . "' ha sido marcada como completada.";
+    }
 }
 
 // Ejemplo de uso
