@@ -1,0 +1,26 @@
+{
+  "name": "PHP 8.5 Dev Container (No-Root)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  // Establece la ruta raíz del proyecto dentro del contenedor
+  "workspaceFolder": "/workspaces",
+  // Monta el contenido de tu carpeta local (.) directamente en /workspaces
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces,type=bind",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "felixfbecker.php-debug",
+        "neilbrayfield.php-docblocker",
+        "xdebug.php-debug"
+      ],
+      "settings": {
+        "php.suggest.basic": false,
+        "intelephense.environment.phpVersion": "8.5.0"
+      }
+    }
+  },
+  "remoteUser": "vscode",
+  "containerUser": "vscode"
+}
