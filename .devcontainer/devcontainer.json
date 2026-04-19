@@ -7,6 +7,13 @@
   "workspaceFolder": "/workspaces",
   // Monta el contenido de tu carpeta local (.) directamente en /workspaces
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces,type=bind",
+  "mounts": [
+    {
+      "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.ssh",
+      "target": "/home/vscode/.ssh",
+      "type": "bind"
+    }
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
